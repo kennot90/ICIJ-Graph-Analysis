@@ -66,33 +66,37 @@ No	| Name of Column	| Remarks
 5	| 'inactivation_date'	| 
 6	| 'address'	| Address of Entity
 
-Table 2 - Feature Engineering
+Table 2 - Feature Engineering<br />
 We took out the relevant information as shown in the table above. With these columns, we check for duplicate records and remove the duplicates. Next, we inspect the values of each column. It is noted that there are missing or erroneous values in the dataset. These are not relevant in our analysis and are removed.  After which, we count the number of linkages between the countries and labels as weights. Table 2 shows the sample of the output after Feature Engineering. Through manual inspection, it is found that both the source and the target can be of the same country. As such, it has been removed in a bid to provide a more accurate analysis.
 
-Target	Source	Weight
-British Virgin Islands	Hong Kong	27,228
-British Virgin Islands	Switzerland	19,650
-Panama	Switzerland	11,590
-British Virgin Islands	Jersey	10,467
-Panama	Luxembourg	5,584
+Target	|Source|	Weight
+------------ | -------------| -------------
+British Virgin Islands	|Hong Kong	|27,228
+British Virgin Islands|	Switzerland	|19,650
+Panama	|Switzerland	|11,590
+British Virgin Islands	|Jersey	|10,467
+Panama	|Luxembourg	|5,584
+
 Table 3 - Sample of the output
-Graph analysis
-Key Player Detection
-Detecting the key countries (Macro Approach)
+
+<h1>Graph analysis</h1>
+<h2>Key Player Detection</h2>
+<h3>Detecting the key countries (Macro Approach)</h3>
 
 To identify the key countries that are involved in the database, two algorithms namely, PageRank algorithm and Betweenness Centrality algorithm are used to detect the key players. PageRank Algorithm…… Betweenness Centrality algorithm seeks out the middle man of the graph. It identifies the key nodes that facilitates the transfer of information to other nodes. PageRank is an algorithm to calculate the importance of the nodes in the network and rank them accordingly. Both identify the key players in the graph with different objectives in mind. We use the algorithms available in NEO4J to calculate out the scores. The results are as shown in Table 4 below.
 
-No	Weighted PageRank		Betweenness Centrality
-	Country	Score		Country	Centrality
-1	British Virgin Islands	34.08		Panama	1058.99
-2	Panama	32.59		British Virgin Islands	581.49
-3	Bahamas	22.88		Bahamas	460.25
-4	Seychelles	8.02		Hong Kong	419.16
-5	Niue	6.01		Singapore	163.47
-6	Nevada	2.00		Seychelles	120.10
-7	British Anguilla	1.94		New Zealand	28.13
-8	Samoa	1.87		United Kingdom	24.00
-9	Hong Kong	0.66		Belize	20.79
+No|	Weighted PageRank	||	Betweenness Centrality
+------------ | -------------| -------------
+|	Country	Score	|	Country	Centrality
+1|	British Virgin Islands	|34.08	||	Panama	|1058.99
+2	|Panama|	32.59	||	British Virgin Islands	|581.49
+3|	Bahamas|	22.88	||	Bahamas	|460.25
+4|	Seychelles|	8.02	||	Hong Kong	|419.16
+5|	Niue	|6.01		||Singapore|	163.47
+6|	Nevada	|2.00		||Seychelles|	120.10
+7|	British Anguilla|	1.94	||	New Zealand|	28.13
+8|	Samoa	|1.87		||United Kingdom	|24.00
+9|	Hong Kong	|0.66	||	Belize|	20.79
 Table 4- Results of Weighted PageRank and Betweenness Centrality
 From Table 3, we can see that the results differ for both algorithms. In Weighted PageRank, all the top 8 countries are labelled as Tax Havens save for Nevada. Nevada can be considered an outlier for it has unique tax rules within US. As such, we can see that PageRank is very good at identifying all the Tax Havens around the world. 
 
