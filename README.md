@@ -47,6 +47,7 @@ Total No. of Relationships |249,191 | 561,393 | 674,103 | 364,475
 Entities                   |175,888 | 105,517 | 213,635 | 24,957
 Intermediary               |541     | 9,527   | 14,111  | 186
 Officer                   | 25,262  | 107,191 | 238,403 | 77,012
+
 Table 1- Size of the ICIJ Database
 Figure 1 and Table 1 show the overall view of the dataset. From the viewpoint of the dataset, it is deemed that exploring the dataset together is computationally intensive and not viable.
 As such, we do a two-prong approach to draw meaningful insights into the data namely the Micro Approach and the Macro Approach.
