@@ -124,7 +124,7 @@ As mentioned in the introduction, an officer plays an important role in an offsh
 
 It is assumed that the officers who are related to the same entity have some form of contacts with one another. The relationship created will be bi-directional and one of the officers will be within the stated country as shown in Figure 2.
 
-
+![Page_rank_relationship](https://github.com/rickyken90/ICIJ-Graph-Analysis/blob/master/Images/Relationship.png)<br />
 We run PageRank with the nodes being the Officers and the links being the newly created social link “COMMON_INVESTMENTS_COUNTRY” on China and British Virgin Island. Table 5 denotes the results obtained.
 
 PageRank of China	|         |	PageRank of British Virgin Island|~
@@ -150,7 +150,7 @@ Research online reveals that Portcullis TrustNet is in fact a Singapore-based la
 
 The data that show the connection between the countries is used as the initial data for the community detection. We use Gephi for this part of the analysis. We want to observe the communities that are created based on the countries that interact with Singapore in the data. We filter the data by keeping countries that are connected to Singapore and their connections by using an Ego network query with the pattern set to Singapore and the depth set to 1. 
 
- 
+![Overview_Community_Image](https://github.com/rickyken90/ICIJ-Graph-Analysis/blob/master/Images/Gephi_Country.png)<br />
 Figure 3 Components extracted for countries connected to Singapore (pink, yellow and green nodes)
 Gephi uses the community detection approach as mentioned in the algorithm “Fast unfolding of communities in large networks” [9]. A modularity score of 0.087 is obtained and 3 communities are detected when the algorithm is run on the filtered graph. Selected countries that form the communities after the algorithm is run is mentioned in the below table also.
 
@@ -174,13 +174,13 @@ It needs to be noted that the modularity of the communities generated using the 
 As such, we look from another perspective to find out the communities from the database. 
 Another news from the Paradise Papers was that the Queen of England has various off-shoring outlets. We can gain useful insights even by using simple but powerful queries. By finding shared entity relationships between officers named “Duchy of Lancaster” (The Queen of England) and other officers, we can obtain the graph below. 
 
- 
+ ![Network of Queen of England](https://github.com/rickyken90/ICIJ-Graph-Analysis/blob/master/Images/Dutchy.png)<br />
 Figure 4 Network of Queen of England
 
 Note that “The Duchy of Lancaster” has a company “Jubilee Absolute Return”, which is based in Bermuda. There are 4 other officers which are officers of “Jubilee Absolute Return”, namely:  Sutherland – Linda M, Waters Jnr. – Col. Sumner Horton, Fauchier Partners International Ltd. and RSM Robson Rhodes LLP. Of these 4, 3 of them are based in Bermuda, and registered at Head Office, 6 Front Street in Bermuda. Of the 3 based in Bermuda, Sutherland is an officer of numerous companies as well. The revelation is that these companies are almost all located at the same location, Head Office, 6 Front Street in Bermuda, which is probably why this warrants an investigation.
 
   
-
+ ![Office](https://github.com/rickyken90/ICIJ-Graph-Analysis/blob/master/Images/WINWORD_2018-11-07_16-19-08.png)<br />
 <h3>Other Stories </h3>
 There are many other cases discovered by journalists over the years from the data. Few of the prominent ones –
 
