@@ -1,4 +1,4 @@
-#Executive Summary <h1> tag
+#<h1>Executive Summary</h1>
 
 In this report, we look at the leaked papers published by The International Consortium of Investigative Journalists (ICIJ). The database is the amalgamation of 4 separate leaks, namely, The Panama Papers, The Bahamas Papers, The Paradise papers and Offshore Leaks Papers. From this huge trove of information available to us, we analyse the data from 2 perspectives, namely the Macro Approach and the Micro Approach. Through this two-pronged approach, we derived meaningful insights into the dataset and identified the key players as well as the community associated with it from the dataset. 
 
@@ -7,7 +7,7 @@ In the Macro Approach, we identified the Tax Havens as well as Financial Hubs in
 As mentioned by Barack Obama, 
 *"It's not that they're breaking the laws," he said, "it's that the laws are so poorly designed that they allow people, if they've got enough lawyers and enough accountants, to wiggle out of responsibilities that ordinary citizens are having to abide by."*
 
-#Introduction <h1> tag
+#Introduction <h1>
 
 The Paradise Papers, Panama Papers, Bahamas Leaks and the Offshore Leaks are all separate leaks that form the ICIJ Offshore Leaks database. Almost 520,000 offshore entities have been revealed in this investigation database. 
 
