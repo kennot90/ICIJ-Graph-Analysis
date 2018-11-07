@@ -87,7 +87,7 @@ To identify the key countries that are involved in the database, two algorithms 
 
 No           |	Weighted PageRank	|         |    Betweenness Centrality   |	 ~
 ------------ | -------------| -------------| -------------| -------------
-|	Country	| Score	||	Country	| Centrality
+~|	Country	| Score	|	Country	| Centrality
 1|	British Virgin Islands	|34.08	|	Panama	|1058.99
 2	|Panama|	32.59	|	British Virgin Islands	|581.49
 3|	Bahamas|	22.88	|	Bahamas	|460.25
@@ -105,16 +105,18 @@ For Betweenness Centrality Algorithm, it identifies the Key Countries who are fa
 
 The 2 question naturally comes about. 
 
-What are the characteristics of a Tax Haven?
-What are the characteristics of a Financial Centre?
+*What are the characteristics of a Tax Haven?*
+*What are the characteristics of a Financial Centre?*
 
 We choose to examine the Tax Havens top countries in the above tables: Panama, Bahamas and the British Virgin Islands from North America, Samoa from Oceania. These countries share the below characteristics [2, 3, 4, 5, 6]:
-•	These countries offer tax and business friendly laws for foreign investors and have low or even non-existent taxes for foreign individuals and companies. 
-•	These countries also have legislations in place to ensure financial records are private and financial institutes are not required to provide access to personal data about individuals. 
-•	These countries are small, have a stable government and their government use the small franchise tax received from these foreign companies to cultivate new streams of national revenue.
+
+* These countries offer tax and business friendly laws for foreign investors and have low or even non-existent taxes for foreign individuals and companies. 
+* These countries also have legislations in place to ensure financial records are private and financial institutes are not required to provide access to personal data about individuals. 
+* These countries are small, have a stable government and their government use the small franchise tax received from these foreign companies to cultivate new streams of national revenue.
+
 Many of these companies are managed by law firms like Mossack Fonseca [8], Appleby [7] etc. which are based out of Financial Centres. Due to the regulations and the above reasons, the law firms are not required to keep records of any transactions. These factors together lead to these countries being classified as tax havens.
 
-Detecting Key officers (Micro Approach)
+<h3>Detecting Key officers (Micro Approach)</h3>
 
 We have taken note of the Tax Havens and the key characteristics that comes along with the countries. Therefore, it will be prudent to go deeper into the analysis of these countries and obtain more information on the Key Firms and the communities associated with them. We will be looking at the following countries, namely British Virgin Island and China.
 
