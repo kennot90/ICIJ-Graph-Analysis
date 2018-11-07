@@ -39,13 +39,13 @@ After obtaining the tax havens, we would like to delve a bit deeper into who are
 - Other: Additional information items.
 
 ![Overview_Image](https://github.com/rickyken90/ICIJ-Graph-Analysis/blob/master/Images/overview_image.jpg)<br />
-Figure 1 - Relationship between the different nodes
-
-	Bahamas Papers	Offshore Leaks	Panama Papers	Paradise Papers
-Total No. of Relationships	249,191	561,393	674,103	364,475
-Entities	175,888	105,517	213,635	24,957
-Intermediary	541	9,527	14,111	186
-Officers	25,262	107,191	238,403	77,012
+Figure 1 - Relationship between the different nodes<br />
+Test         |Bahamas Papers | Offshore   Leaks  | Panama Papers | Paradise Papers
+------------ | ------------- | ------------- | ------------- | -------------
+Total No. of Relationships |249,191 | 561,393 | 674,103 | 364,475
+Entities                   |175,888 | 105,517 | 213,635 | 24,957
+Intermediary               |541     | 9,527   | 14,111  | 186
+Officer                   | 25,262  | 107,191 | 238,403 | 77,012<br />
 Table 1- Size of the ICIJ Database
 Figure 1 and Table 1 show the overall view of the dataset. From the viewpoint of the dataset, it is deemed that exploring the dataset together is computationally intensive and not viable.
 As such, we do a two-prong approach to draw meaningful insights into the data namely the Micro Approach and the Macro Approach.
