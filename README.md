@@ -145,8 +145,8 @@ Table 5- Page Rank of China and BVI
 
 Research online reveals that Portcullis TrustNet is in fact a Singapore-based law firm. Based on the website, it offers services such as Trustee, Foundations as well as fund administration across the world. From ICIJ Database, it has 280 thousand entities connected to the company across the whole world. In 2013, it was one of the largest Wealth Advisory companies in Asia. Therefore, it comes with no surprises that Portcullis TrustNet is one of the key firms in helping high net-worth individuals, family offices etc. from China to set up offshore entities across the world. [11] This is the same for firms such as Trustcorp Limited, Acticorp Limited, and Execorp Limited where the firms sell financial and wealth management services to high net worth individuals. One of Execorp Limited subsidiary, Oxel Systems Pte. Ltd, is in the business of supply and sale of chips for use in personalised electronic identification cards or “smart cards”. Oxel System was involved in legal battle with PT. Sandipala Arthaputra in regards of “E-KTP Cards” (electronic ID) tender for Indonesian population [12]. Mr Andi Bharata Winata (“Mr Winata”) was Oxel’s Sales and Marketing Representative in Indonesia. He is the son of Tommy Winata, one of richest businessman in Indonesia [13][14]. This tender project was embroiled in corruption case controversies which involved highly powerful figures, including the Indonesian Head of House of Representative, Setya Novanto [15]. 
 
-<h1>Community detection</h1>
-<h2>Detecting communities from interactions between countries</h2>
+<h2>Community detection</h2>
+<h3>Detecting communities from interactions between countries</h3>
 
 The data that show the connection between the countries is used as the initial data for the community detection. We use Gephi for this part of the analysis. We want to observe the communities that are created based on the countries that interact with Singapore in the data. We filter the data by keeping countries that are connected to Singapore and their connections by using an Ego network query with the pattern set to Singapore and the depth set to 1. 
 
@@ -169,7 +169,7 @@ As the above table shows each community has some major tax havens – Switzerlan
 From Singapore’s perspective, it can be said that wealthy individuals and firms from Indonesia utilize the services of intermediaries in Singapore and Hong Kong to set up their shell establishments in the tax havens of Switzerland and the Cook Islands. 
 It needs to be noted that the modularity of the communities generated using the algorithm is low at a value of approx. 0.09. Based on the findings different tax havens have different tax laws which means that countries like Luxembourg are favoured for their patent tax benefits while those like Panama are favoured for their income tax benefits [16]. Since companies across most countries in the world would have multiple requirements to minimise the tax payable in their home countries, the interconnections between the tax havens and hence the communities are high, which leads to a low modularity score.
 
-<h2>A Royal Community Case Study: The Duchy of Lancaster </h2>
+<h3>A Royal Community Case Study: The Duchy of Lancaster </h3>
 
 As such, we look from another perspective to find out the communities from the database. 
 Another news from the Paradise Papers was that the Queen of England has various off-shoring outlets. We can gain useful insights even by using simple but powerful queries. By finding shared entity relationships between officers named “Duchy of Lancaster” (The Queen of England) and other officers, we can obtain the graph below. 
@@ -181,7 +181,7 @@ Note that “The Duchy of Lancaster” has a company “Jubilee Absolute Return�
 
   
 
-<h2<Other Stories </h2>
+<h3>Other Stories </h3>
 There are many other cases discovered by journalists over the years from the data. Few of the prominent ones –
 
 * U.S.A. – President Donald Trump and his cabinets https://projects.icij.org/paradise-papers/the-influencers/#/_ga=2.12709621.39699692.1541000890-1782747271.1540287014 
