@@ -1,4 +1,4 @@
-#Executive Summary
+#Executive Summary <h1> tag
 
 In this report, we look at the leaked papers published by The International Consortium of Investigative Journalists (ICIJ). The database is the amalgamation of 4 separate leaks, namely, The Panama Papers, The Bahamas Papers, The Paradise papers and Offshore Leaks Papers. From this huge trove of information available to us, we analyse the data from 2 perspectives, namely the Macro Approach and the Micro Approach. Through this two-pronged approach, we derived meaningful insights into the dataset and identified the key players as well as the community associated with it from the dataset. 
 
@@ -7,7 +7,7 @@ In the Macro Approach, we identified the Tax Havens as well as Financial Hubs in
 As mentioned by Barack Obama, 
 *"It's not that they're breaking the laws," he said, "it's that the laws are so poorly designed that they allow people, if they've got enough lawyers and enough accountants, to wiggle out of responsibilities that ordinary citizens are having to abide by."*
 
-#Introduction
+#Introduction <h1> tag
 
 The Paradise Papers, Panama Papers, Bahamas Leaks and the Offshore Leaks are all separate leaks that form the ICIJ Offshore Leaks database. Almost 520,000 offshore entities have been revealed in this investigation database. 
 
@@ -17,16 +17,16 @@ On 15 April 2016, ICIJ has published a huge database detailing the confidential 
 
 #Business Problems 
 
-##Question: Which countries are the Tax Havens (Key Players)?
+##Question: Which countries are the Tax Havens (Key Players)? <h2> tag
 
 We would like to know which countries serve as the world’s tax havens. These countries could serve as actual “offshore-friendly” countries, or as financial hubs  who have the infrastructure to facilitate these offshore legal complexities and transactions. 
 
-##Question: What are the communities among the key players?
+##Question: What are the communities among the key players? <h2> tag
 
 After obtaining the tax havens, we would like to delve a bit deeper into who are the Officers that operate around these tax havens. This would be useful insight into which companies / personnel are largely responsible for such offshore activities. 
 
-#Data Exploration
-##Data contained in the Paradise Papers:
+#Data Exploration <h1> tag
+##Data contained in the Paradise Papers: <h2> tag
 •	Officer - A person or company who plays a role in an offshore entity, such as beneficiary, director, or shareholder. The relationships shown in the diagram are just a sample of all the existing ones.
 •	Intermediary: go-between for someone seeking an offshore corporation and an offshore service provider — usually a law-firm or a middleman that asks an offshore service provider to create an offshore firm for a client.
 •	Entity - The offshore legal entity. This could be a company, trust, foundation, or other legal entity created in a low-tax jurisdiction.
