@@ -28,16 +28,15 @@ After obtaining the tax havens, we would like to delve a bit deeper into who are
 
 <h1>Data Exploration </h1>
 <h2>Data contained in the Paradise Papers: </h2>
-- Officer - A person or company who plays a role in an offshore entity, such as beneficiary, director, or shareholder. The relationships shown in the diagram are just a sample of all the existing ones.
-- Intermediary: go-between for someone seeking an offshore corporation and an offshore service provider — usually a law-firm or a middleman that asks an offshore service provider to create an offshore firm for a client.
-- Entity - The offshore legal entity. This could be a company, trust, foundation, or other legal entity created in a low-tax jurisdiction.
-- Address: postal address as it appears in the original databases obtained by ICIJ.
-- Other: Additional information items.
- * Bullet 1
-* Bullet 2
-  * Bullet 2a
-  * Bullet 2b
-* Bullet 3
+	- Officer 
+	- A person or company who plays a role in an offshore entity, such as beneficiary, director, or shareholder. The relationships shown in the diagram are just a sample of all the existing ones.
+	- Intermediary:
+	-Go-between for someone seeking an offshore corporation and an offshore service provider, usually a law-firm or a middleman that asks an offshore service provider to create an offshore firm for a client.
+	- Entity 
+	- The offshore legal entity. This could be a company, trust, foundation, or other legal entity created in a low-tax jurisdiction.
+	- Address: postal address as it appears in the original databases obtained by ICIJ.
+	- Other: Additional information items.
+
 Figure 1 - Relationship between the different nodes
 
 	Bahamas Papers	Offshore Leaks	Panama Papers	Paradise Papers
