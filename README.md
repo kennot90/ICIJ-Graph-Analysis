@@ -205,22 +205,22 @@ Through this report, we aim to obtain a deeper understanding of the accumulated 
 
 <h1>References</h1>
 
-[1] https://neo4j.com/blog/analyzing-panama-papers-neo4j/
-[2] https://www.theatlantic.com/business/archive/2016/04/panama-tax-haven/476766/
-[3] https://www.investopedia.com/ask/answers/060516/why-bahamas-considered-tax-haven.asp
-[4] https://www.businessinsider.sg/british-virgin-islands-a-tax-haven-or-legitimate-business-hub-2017-6/?r=UK&IR=T
-[5] https://www.investopedia.com/ask/answers/060716/why-singapore-considered-tax-haven.asp
-[6] http://pacificguardians.org/blog/2015/02/15/samoa-ranked-no-1-as-worlds-most-secretive-tax-haven-potential-for-more-investors/
-[7] https://www.applebyglobal.com/about/
-[8] http://mossfonmedia.com/
-[9] Blondel, V. D., Guillaume, J. L., Lambiotte, R., & Lefebvre, E. (2008). Fast unfolding of communities in large networks. Journal of statistical mechanics: theory and experiment, 2008(10), P10008.
-[10] https://international-adviser.com/hong-kong-wealth-management-assets-hit-1trn/
-[11] https://uk.reuters.com/article/uk-portcullis-wealth-insight/insight-a-singapore-wealth-manager-under-fire-amid-crackdown-idUKBRE9510E920130603
-[12] https://www.supremecourt.gov.sg/docs/default-source/module-document/judgement/-2017-sghc-102-pdf.pdf
-[13] https://en.tempo.co/read/news/2017/05/18/055876437/E-KTP-Trial-Paulus-Tanos-Admits-He-Received-Death-Threats
-[14] https://www.forbes.com/lists/2006/80/06indonesia_Tomy-Winata_RSXG.html
-[15] https://www.theguardian.com/world/2017/nov/16/top-indonesian-politician-corruption-case-missing
-[16] http://nomadcapitalist.com/2017/09/15/low-tax-countries-intellectual-property-ultimate-guide/
+[1] https://neo4j.com/blog/analyzing-panama-papers-neo4j/<br />
+[2] https://www.theatlantic.com/business/archive/2016/04/panama-tax-haven/476766/<br />
+[3] https://www.investopedia.com/ask/answers/060516/why-bahamas-considered-tax-haven.asp<br />
+[4] https://www.businessinsider.sg/british-virgin-islands-a-tax-haven-or-legitimate-business-hub-2017-6/?r=UK&IR=T<br />
+[5] https://www.investopedia.com/ask/answers/060716/why-singapore-considered-tax-haven.asp<br />
+[6] http://pacificguardians.org/blog/2015/02/15/samoa-ranked-no-1-as-worlds-most-secretive-tax-haven-potential-for-more-investors/<br />
+[7] https://www.applebyglobal.com/about/<br />
+[8] http://mossfonmedia.com/<br />
+[9] Blondel, V. D., Guillaume, J. L., Lambiotte, R., & Lefebvre, E. (2008). Fast unfolding of communities in large networks. Journal of statistical mechanics: theory and experiment, 2008(10), P10008.<br />
+[10] https://international-adviser.com/hong-kong-wealth-management-assets-hit-1trn/<br />
+[11] https://uk.reuters.com/article/uk-portcullis-wealth-insight/insight-a-singapore-wealth-manager-under-fire-amid-crackdown-idUKBRE9510E920130603<br />
+[12] https://www.supremecourt.gov.sg/docs/default-source/module-document/judgement/-2017-sghc-102-pdf.pdf<br />
+[13] https://en.tempo.co/read/news/2017/05/18/055876437/E-KTP-Trial-Paulus-Tanos-Admits-He-Received-Death-Threats<br />
+[14] https://www.forbes.com/lists/2006/80/06indonesia_Tomy-Winata_RSXG.html<br />
+[15] https://www.theguardian.com/world/2017/nov/16/top-indonesian-politician-corruption-case-missing<br />
+[16] http://nomadcapitalist.com/2017/09/15/low-tax-countries-intellectual-property-ultimate-guide/<br />
 
 
 
