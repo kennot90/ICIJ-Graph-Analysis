@@ -86,7 +86,7 @@ Table 3 - Sample of the output
 To identify the key countries that are involved in the database, two algorithms namely, PageRank algorithm and Betweenness Centrality algorithm are used to detect the key players. PageRank Algorithm…… Betweenness Centrality algorithm seeks out the middle man of the graph. It identifies the key nodes that facilitates the transfer of information to other nodes. PageRank is an algorithm to calculate the importance of the nodes in the network and rank them accordingly. Both identify the key players in the graph with different objectives in mind. We use the algorithms available in NEO4J to calculate out the scores. The results are as shown in Table 4 below.
 
 No|	Weighted PageRank	||	Betweenness Centrality
------------- | -------------| -------------
+------------ | -------------| -------------| -------------| -------------
 |	Country	Score	|	Country	Centrality
 1|	British Virgin Islands	|34.08	||	Panama	|1058.99
 2	|Panama|	32.59	||	British Virgin Islands	|581.49
