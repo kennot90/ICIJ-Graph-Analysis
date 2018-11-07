@@ -33,7 +33,11 @@ After obtaining the tax havens, we would like to delve a bit deeper into who are
 - Entity - The offshore legal entity. This could be a company, trust, foundation, or other legal entity created in a low-tax jurisdiction.
 - Address: postal address as it appears in the original databases obtained by ICIJ.
 - Other: Additional information items.
- 
+ * Bullet 1
+* Bullet 2
+  * Bullet 2a
+  * Bullet 2b
+* Bullet 3
 Figure 1 - Relationship between the different nodes
 
 	Bahamas Papers	Offshore Leaks	Panama Papers	Paradise Papers
