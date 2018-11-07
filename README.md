@@ -56,6 +56,7 @@ For the Marco approach, more focus is placed on the Entities and Countries. All 
 Feature Engineering
 
 We perform Feature Engineering on the Entities Dataset.
+
 No	| Name of Column	| Remarks
 ------------ | -------------| -------------
 1	| 'name'	| Name of the Foreign Entity
@@ -64,6 +65,7 @@ No	| Name of Column	| Remarks
 4	| 'incorporation_date'	| 
 5	| 'inactivation_date'	| 
 6	| 'address'	| Address of Entity
+
 Table 2 - Feature Engineering
 We took out the relevant information as shown in the table above. With these columns, we check for duplicate records and remove the duplicates. Next, we inspect the values of each column. It is noted that there are missing or erroneous values in the dataset. These are not relevant in our analysis and are removed.  After which, we count the number of linkages between the countries and labels as weights. Table 2 shows the sample of the output after Feature Engineering. Through manual inspection, it is found that both the source and the target can be of the same country. As such, it has been removed in a bid to provide a more accurate analysis.
 
