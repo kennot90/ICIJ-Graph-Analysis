@@ -139,13 +139,14 @@ Officer|	Score	|	Officer|	Score
 "Reid Services Limited - Cayman"	|126.74	|	"Mermeden Ltd"|	93.90
 "Sharecorp Limited"|	85.35|		"Mills - Judith A"|	77.046
 "Stockcorp Limited"	|48.93	|	"Yicko Skyford Capital Limited"	|75.54
-"PricewaterhouseCoopers - Hong Kong"	|39.17	|	"Valinco Investments Limited"|	72.90
+"PricewaterhouseCoopers - Hong Kong"	|39.17	|	"Valinco Investments Limited"|	72.90<br />
 
 Table 5- Page Rank of China and BVI
+
 Research online reveals that Portcullis TrustNet is in fact a Singapore-based law firm. Based on the website, it offers services such as Trustee, Foundations as well as fund administration across the world. From ICIJ Database, it has 280 thousand entities connected to the company across the whole world. In 2013, it was one of the largest Wealth Advisory companies in Asia. Therefore, it comes with no surprises that Portcullis TrustNet is one of the key firms in helping high net-worth individuals, family offices etc. from China to set up offshore entities across the world. [11] This is the same for firms such as Trustcorp Limited, Acticorp Limited, and Execorp Limited where the firms sell financial and wealth management services to high net worth individuals. One of Execorp Limited subsidiary, Oxel Systems Pte. Ltd, is in the business of supply and sale of chips for use in personalised electronic identification cards or “smart cards”. Oxel System was involved in legal battle with PT. Sandipala Arthaputra in regards of “E-KTP Cards” (electronic ID) tender for Indonesian population [12]. Mr Andi Bharata Winata (“Mr Winata”) was Oxel’s Sales and Marketing Representative in Indonesia. He is the son of Tommy Winata, one of richest businessman in Indonesia [13][14]. This tender project was embroiled in corruption case controversies which involved highly powerful figures, including the Indonesian Head of House of Representative, Setya Novanto [15]. 
 
-Community detection
-Detecting communities from interactions between countries
+<h1>Community detection</h1>
+<h2>Detecting communities from interactions between countries</h2>
 
 The data that show the connection between the countries is used as the initial data for the community detection. We use Gephi for this part of the analysis. We want to observe the communities that are created based on the countries that interact with Singapore in the data. We filter the data by keeping countries that are connected to Singapore and their connections by using an Ego network query with the pattern set to Singapore and the depth set to 1. 
 
@@ -153,18 +154,22 @@ The data that show the connection between the countries is used as the initial d
 Figure 3 Components extracted for countries connected to Singapore (pink, yellow and green nodes)
 Gephi uses the community detection approach as mentioned in the algorithm “Fast unfolding of communities in large networks” [9]. A modularity score of 0.087 is obtained and 3 communities are detected when the algorithm is run on the filtered graph. Selected countries that form the communities after the algorithm is run is mentioned in the below table also.
 
-Community 1	Community 2	Community 3
-Singapore	Malaysia	Taiwan
-Hong Kong	Bahamas	Seychelles
-Indonesia	Mauritius	Samoa
-Switzerland	Canada	Netherlands
-Cook Islands	British Virgin Islands	Liechtenstein
+Community 1	|Community 2	|Community 3
+------------ | -------------|---------------------
+Singapore|	Malaysia|	Taiwan
+Hong Kong|	Bahamas	|Seychelles
+Indonesia	|Mauritius|	Samoa
+Switzerland	|Canada	|Netherlands
+Cook Islands	|British Virgin Islands	|Liechtenstein
+
 Table 6 - Countries part of the communities (only 6 shown for each)
+
 As the above table shows each community has some major tax havens – Switzerland and Cook Islands for the first community, Bahamas and British Virgin Islands for the second community and Samoa and Seychelles from the third community. Hong Kong and Singapore in the first community are influential intermediaries as many firms that specialize in setting up of offshore entities are based out of these countries. 
+
 From Singapore’s perspective, it can be said that wealthy individuals and firms from Indonesia utilize the services of intermediaries in Singapore and Hong Kong to set up their shell establishments in the tax havens of Switzerland and the Cook Islands. 
 It needs to be noted that the modularity of the communities generated using the algorithm is low at a value of approx. 0.09. Based on the findings different tax havens have different tax laws which means that countries like Luxembourg are favoured for their patent tax benefits while those like Panama are favoured for their income tax benefits [16]. Since companies across most countries in the world would have multiple requirements to minimise the tax payable in their home countries, the interconnections between the tax havens and hence the communities are high, which leads to a low modularity score.
 
-A Royal Community Case Study: The Duchy of Lancaster 
+<h2>A Royal Community Case Study: The Duchy of Lancaster </h2>
 
 As such, we look from another perspective to find out the communities from the database. 
 Another news from the Paradise Papers was that the Queen of England has various off-shoring outlets. We can gain useful insights even by using simple but powerful queries. By finding shared entity relationships between officers named “Duchy of Lancaster” (The Queen of England) and other officers, we can obtain the graph below. 
@@ -176,13 +181,14 @@ Note that “The Duchy of Lancaster” has a company “Jubilee Absolute Return�
 
   
 
-Other Stories 
+<h2<Other Stories </h2>
 There are many other cases discovered by journalists over the years from the data. Few of the prominent ones –
-•	U.S.A. – President Donald Trump and his cabinets https://projects.icij.org/paradise-papers/the-influencers/#/_ga=2.12709621.39699692.1541000890-1782747271.1540287014 
-•	Canada – Former PM - Paul Martin and CSL Group https://offshoreleaks.icij.org/stories/paul-martin 
-•	Jordon – Queen Noor Al Hussein 
+
+* U.S.A. – President Donald Trump and his cabinets https://projects.icij.org/paradise-papers/the-influencers/#/_ga=2.12709621.39699692.1541000890-1782747271.1540287014 
+* Canada – Former PM - Paul Martin and CSL Group https://offshoreleaks.icij.org/stories/paul-martin 
+* Jordon – Queen Noor Al Hussein 
 https://offshoreleaks.icij.org/stories/noor-al-hussein 
-•	Russia – a close friend of Putin 
+* Russia – a close friend of Putin 
 https://offshoreleaks.icij.org/stories/sergey-roldugin 
 With closer investigation on every entity and comparison across the years it will be possible to observe more interesting insights.
 Further Improvements
@@ -191,13 +197,13 @@ We were able to detect communities in subgraphs using keyword retrieval but foun
 There exists an alternative of creating a custom algorithm to iterate through top scored ‘seed’ nodes (Officers / Countries) and recursively expand subgraph up to N neighbours. This following a single machine approach requires more RAM to scale up.
 
 Another future consideration is to detect cycles in the graph to know if any community keeps continuously circulating money internally within its own entities.
-Conclusion
+<h1>Conclusion</h1>
 We analysed the leaked papers published by The International Consortium of Investigative Journalists and identified the key players and the communities created around them. Key players were identified from two perspectives – the Macro Approach and the Micro Approach. In the Macro Approach, we identified certain countries that serve as Tax Havens. From the Micro Approach we discovered firms that act as intermediaries and pave the way to move money out to these tax havens. Having such key players as the centre figure, we were able to traverse their neighbours and expand into communities on both country and individual firm  level. We also delved into the affairs of the Duchy of Lancaster, owned by the Queen of England, as a case example of how offshoring by the elite rich is done. Finally, emerging stories focusing on prominent leaders from other countries from this huge database were briefly discussed.
 
-Disclaimer
+<h1>Disclaimer</h1>
 Through this report, we aim to obtain a deeper understanding of the accumulated Leaked Database and all insights obtained here are meant for research purpose only. As such, no part of this report is to be reproduced for any other purpose other than research. 
 
-References
+<h1>References</h1>
 
 [1] https://neo4j.com/blog/analyzing-panama-papers-neo4j/
 [2] https://www.theatlantic.com/business/archive/2016/04/panama-tax-haven/476766/
