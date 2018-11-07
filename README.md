@@ -191,12 +191,12 @@ https://offshoreleaks.icij.org/stories/noor-al-hussein
 * Russia – a close friend of Putin 
 https://offshoreleaks.icij.org/stories/sergey-roldugin 
 With closer investigation on every entity and comparison across the years it will be possible to observe more interesting insights.
-Further Improvements
-We were able to detect communities in subgraphs using keyword retrieval but found it difficult to run current algorithms with increase in the scale of data. Some of the algorithms like Neumann Community Detection hanged when running for the overall graph with over 500K nodes and 2M edges. We can try adopting distributed variants of such algorithms in future.
 
-There exists an alternative of creating a custom algorithm to iterate through top scored ‘seed’ nodes (Officers / Countries) and recursively expand subgraph up to N neighbours. This following a single machine approach requires more RAM to scale up.
+<h1>Further Improvements</h1>
 
-Another future consideration is to detect cycles in the graph to know if any community keeps continuously circulating money internally within its own entities.
+* We were able to detect communities in subgraphs using keyword retrieval but found it difficult to run current algorithms with increase in the scale of data. Some of the algorithms like Neumann Community Detection hanged when running for the overall graph with over 500K nodes and 2M edges. We can try adopting distributed variants of such algorithms in future.
+* There exists an alternative of creating a custom algorithm to iterate through top scored ‘seed’ nodes (Officers / Countries) and recursively expand subgraph up to N neighbours. This following a single machine approach requires more RAM to scale up.
+* Another future consideration is to detect cycles in the graph to know if any community keeps continuously circulating money internally within its own entities.
 <h1>Conclusion</h1>
 We analysed the leaked papers published by The International Consortium of Investigative Journalists and identified the key players and the communities created around them. Key players were identified from two perspectives – the Macro Approach and the Micro Approach. In the Macro Approach, we identified certain countries that serve as Tax Havens. From the Micro Approach we discovered firms that act as intermediaries and pave the way to move money out to these tax havens. Having such key players as the centre figure, we were able to traverse their neighbours and expand into communities on both country and individual firm  level. We also delved into the affairs of the Duchy of Lancaster, owned by the Queen of England, as a case example of how offshoring by the elite rich is done. Finally, emerging stories focusing on prominent leaders from other countries from this huge database were briefly discussed.
 
