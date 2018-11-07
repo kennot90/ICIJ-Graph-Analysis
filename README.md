@@ -40,7 +40,8 @@ After obtaining the tax havens, we would like to delve a bit deeper into who are
 
 ![Overview_Image](https://github.com/rickyken90/ICIJ-Graph-Analysis/blob/master/Images/overview_image.jpg)<br />
 Figure 1 - Relationship between the different nodes<br />
-Test         |Bahamas Papers | Offshore   Leaks  | Panama Papers | Paradise Papers
+
+Test |Bahamas Papers | Offshore Leaks | Panama Papers | Paradise Papers
 ------------ | ------------- | ------------- | ------------- | -------------
 Total No. of Relationships |249,191 | 561,393 | 674,103 | 364,475
 Entities                   |175,888 | 105,517 | 213,635 | 24,957
