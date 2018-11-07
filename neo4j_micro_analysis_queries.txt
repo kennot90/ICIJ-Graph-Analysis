@@ -1,0 +1,100 @@
+# This queries requires Neo4J Desktop for ICIJ: https://offshoreleaks.icij.org/pages/database
+
+Please download the suitable version according to your operating system (Windows, Mac, or Unix) and install it before you run these queries.
+
+
+2. Exploration Queries
+
+
+2.1. Get the first 100 intermediaries with their connections
+
+MATCH (i:Intermediary)-[:INTERMEDIARY_OF]-(e:Entity)
+WITH i,count(e) as rels, collect(e) as entities
+WHERE rels > 1
+RETURN i, rels, entities
+LIMIT 100
+
+
+2.2. Get the first 100 "Appleby" intermediaries
+
+MATCH (i:Intermediary)-[]-(e:Entity)
+WHERE i.name CONTAINS "Appleby"
+RETURN *
+LIMIT 100
+
+
+2.3. Get the connection between Ferrous Resources and Atlantic Iron
+
+MATCH (o:Entity)-[]-(o_mid)-[]-(o2:Entity) 
+WHERE o.name CONTAINS "Ferrous Resources" 
+AND o2.name CONTAINS "Atlantic Iron" 
+RETURN o, o_mid, o2 
+LIMIT 10;
+
+
+2.4. Get the first 100 entities connected to Duchy of Lancaster, the private estate of Queen of United Kingdom
+
+MATCH (o:Officer) WHERE o.name CONTAINS "Duchy of Lancaster"
+MATCH path = (o)-[]->(:Entity)<-[]-(:Officer)-[]->(:Entity)
+RETURN path LIMIT 100;
+
+
+2.5. Get the connection between Duchy of Lancaster with Sutherland, one of the very connected officer
+
+MATCH (a)-[r*..3]-(b)
+WHERE a.name CONTAINS "Duchy of Lancaster"
+AND b.name CONTAINS "Sutherland"
+RETURN a,r,b
+
+
+3. Micro Analysis
+
+
+3.1. Create Virtual Links between two Officers (China)
+# One of the officer should be based in China. 
+# Name the connection as COMMON_INVESMENTS_CHINA
+
+MATCH (o1:Officer)-[:OFFICER_OF]->()<-[:OFFICER_OF]-(o2:Officer)
+WHERE id(o1) > id(o2) AND o1.countries contains "China"
+WITH o1,o2,count(*) as common_investments
+MERGE (o1)-[c:COMMON_INVESTMENTS_CHINA]-(o2)
+ON CREATE SET c.weight = common_investments;
+
+
+3.2. Create Virtual Links between two Officers (British Virgin Island)
+# One of the officer should be based in British Virgin Island. 
+# Name the connection as COMMON_INVESMENTS_BVI
+
+MATCH (o1:Officer)-[:OFFICER_OF]->()<-[:OFFICER_OF]-(o2:Officer)
+WHERE id(o1) > id(o2) AND o1.countries contains "British Virgin Island" 
+WITH o1,o2,count(*) as common_investments
+MERGE (o1)-[c:COMMON_INVESTMENTS_BVI]-(o2)
+ON CREATE SET c.weight = common_investments;
+
+
+3.3. Execute PageRank algorithm to analyse common investment between two officers (China)
+
+CALL algo.pageRank.stream(
+    'MATCH (o:Officer) WHERE (o)-[:COMMON_INVESTMENTS_CHINA]-()
+     RETURN id(o) as id',
+    'MATCH (o1:Officer)-[:COMMON_INVESTMENTS_CHINA]-(o2)
+     RETURN id(o1) as source,id(o2) as target', 
+    {graph:'cypher'})
+YIELD node,score
+WITH node,score order by score desc limit 10
+RETURN node.name as officer,score;
+
+
+3.4. Execute PageRank algorithm to analyse common investment between two officers (British Virgin Island)
+
+CALL algo.louvain.stream(
+    'MATCH (o:Officer) WHERE (o)-[:COMMON_INVESTMENTS_BVI]-()
+     RETURN id(o) as id',
+    'MATCH (o1:Officer)-[:COMMON_INVESTMENTS_BVI]-(o2)
+     RETURN id(o1) as source, id(o2) as target', 
+    {graph:'cypher'})
+YIELD nodeId, community
+WITH nodeId, community order by community desc limit 10
+RETURN nodeId, community;
+
+

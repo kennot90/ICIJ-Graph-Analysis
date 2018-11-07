@@ -1,0 +1,65 @@
+# This one requires the Official Neo4j Desktop version.
+
+After installing, create a database with any password as you wish.
+You need to add 2 files to the import file.
+Go to the database that you have created, press the Manage Button
+Go to the "Open Folder" Button, Select "Import". Place the 2 files into the folder
+
+  countries.csv
+  edgesbetweencountries_no_same_count.csv
+
+
+1. Macro Analysis
+
+1.1. To delete the Relationships
+
+MATCH ()-[r]-()
+DELETE r;
+
+
+1.2. To delete the nodes
+
+MATCH (n) DELETE n;
+
+
+1.3. To load the nodes 
+
+LOAD CSV WITH HEADERS FROM "file:///countries.csv" AS csvline
+MERGE (c:Country { id: csvline.id, name: csvline.country}) WITH csvline 
+RETURN csvline;
+
+
+1.4. To Load the edges
+
+LOAD CSV WITH HEADERS FROM "file:///edgesbetweencountries_no_same_count.csv" AS csvline
+MATCH (source_country:Country {name: csvline.source}), (target_country:Country {name: csvline.target})
+MERGE (source_country)-[:CONNECTED_TO {weight:toInteger(csvline.weight)}]->(target_country);
+
+
+
+1.5. Modified Pagerank with weights
+
+CALL algo.pageRank.stream('name', 'name', {iterations:40, dampingFactor:0.85,
+weightProperty:'weight'})
+YIELD nodeId, score
+MATCH (i) WHERE id(i) = nodeId AND i.name IS NOT NULL
+RETURN i.node_id AS node_id, i.name as node_name, score
+ORDER BY score DESC
+LIMIT 20;
+
+
+1.6. Calculate Betweenness Centrality 
+
+CALL algo.betweenness.stream('Country','CONNECTED_TO',{direction:'out'})
+YIELD nodeId, centrality
+MATCH (c:Country) WHERE id(c) = nodeId
+RETURN c.name AS country_name, centrality
+ORDER BY centrality DESC;
+
+CALL algo.betweenness.stream('Country','CONNECTED_TO',{direction:'in'})
+YIELD nodeId, centrality
+MATCH (c:Country) WHERE id(c) = nodeId
+RETURN c.name AS country_name, centrality
+ORDER BY centrality DESC;
+
+
