@@ -1,3 +1,12 @@
+<h1>Instructions to use the Database</h1>
+
+For Macro Analysis, use the official NEO4J catered for ICIJ Database which can be downloaded in this link. https://offshoreleaks.icij.org/pages/database 
+
+For Micro Analysis, download the NEO4J desktop version and run the commands which can be found in the Micro_Query.txt to view results.
+
+
+
+
 <h1>Executive Summary</h1>
 
 In this report, we look at the leaked papers published by The International Consortium of Investigative Journalists (ICIJ). The database is the amalgamation of 4 separate leaks, namely, The Panama Papers, The Bahamas Papers, The Paradise papers and Offshore Leaks Papers. From this huge trove of information available to us, we analyse the data from 2 perspectives, namely the Macro Approach and the Micro Approach. Through this two-pronged approach, we derived meaningful insights into the dataset and identified the key players as well as the community associated with it from the dataset. 
