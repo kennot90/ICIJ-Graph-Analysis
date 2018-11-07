@@ -125,30 +125,22 @@ As mentioned in the introduction, an officer plays an important role in an offsh
 It is assumed that the officers who are related to the same entity have some form of contacts with one another. The relationship created will be bi-directional and one of the officers will be within the stated country as shown in Figure 2.
 
 
-
-
-
-
-
-
-
-
-
-
 We run PageRank with the nodes being the Officers and the links being the newly created social link “COMMON_INVESTMENTS_COUNTRY” on China and British Virgin Island. Table 5 denotes the results obtained.
 
-PageRank of China		PageRank of British Virgin Island
-Officer	Score		Officer	Score
-"Portcullis TrustNet (Samoa) Limited"	1714.72		"Trustcorp Limited"	1267.16
-"MOSSFON SUBSCRIBERS LTD."	766.51		"Acticorp Limited"	652.57
-"Execorp Limited"	558.46		"Execorp Limited"	450.15
-"D TIMOTHY PINKNEY & NANCY D PINKNEY JT TEN"	167.28		"Sherper Limited"	176.80
-"PHILIP GAROON"	132.12		"Burns - Michael J"	158.80
-"CHEN Ching-Wen"	128.05		"Commonwealth Trust Limited"	117.35
-"Reid Services Limited - Cayman"	126.74		"Mermeden Ltd"	93.90
-"Sharecorp Limited"	85.35		"Mills - Judith A"	77.046
-"Stockcorp Limited"	48.93		"Yicko Skyford Capital Limited"	75.54
-"PricewaterhouseCoopers - Hong Kong"	39.17		"Valinco Investments Limited"	72.90
+PageRank of China	|         |	PageRank of British Virgin Island|~
+------------ | -------------|---------------------|-------------
+Officer|	Score	|	Officer|	Score
+"Portcullis TrustNet (Samoa) Limited"|	1714.72		|"Trustcorp Limited"	|1267.16
+"MOSSFON SUBSCRIBERS LTD."	|766.51	|	"Acticorp Limited"|	652.57
+"Execorp Limited"	|558.46	|	"Execorp Limited"	|450.15
+"D TIMOTHY PINKNEY & NANCY D PINKNEY JT TEN"	|167.28		|"Sherper Limited"|	176.80
+"PHILIP GAROON"|	132.12	|	"Burns - Michael J"	|158.80
+"CHEN Ching-Wen"	|128.05		|"Commonwealth Trust Limited"|	117.35
+"Reid Services Limited - Cayman"	|126.74	|	"Mermeden Ltd"|	93.90
+"Sharecorp Limited"|	85.35|		"Mills - Judith A"|	77.046
+"Stockcorp Limited"	|48.93	|	"Yicko Skyford Capital Limited"	|75.54
+"PricewaterhouseCoopers - Hong Kong"	|39.17	|	"Valinco Investments Limited"|	72.90
+
 Table 5- Page Rank of China and BVI
 Research online reveals that Portcullis TrustNet is in fact a Singapore-based law firm. Based on the website, it offers services such as Trustee, Foundations as well as fund administration across the world. From ICIJ Database, it has 280 thousand entities connected to the company across the whole world. In 2013, it was one of the largest Wealth Advisory companies in Asia. Therefore, it comes with no surprises that Portcullis TrustNet is one of the key firms in helping high net-worth individuals, family offices etc. from China to set up offshore entities across the world. [11] This is the same for firms such as Trustcorp Limited, Acticorp Limited, and Execorp Limited where the firms sell financial and wealth management services to high net worth individuals. One of Execorp Limited subsidiary, Oxel Systems Pte. Ltd, is in the business of supply and sale of chips for use in personalised electronic identification cards or “smart cards”. Oxel System was involved in legal battle with PT. Sandipala Arthaputra in regards of “E-KTP Cards” (electronic ID) tender for Indonesian population [12]. Mr Andi Bharata Winata (“Mr Winata”) was Oxel’s Sales and Marketing Representative in Indonesia. He is the son of Tommy Winata, one of richest businessman in Indonesia [13][14]. This tender project was embroiled in corruption case controversies which involved highly powerful figures, including the Indonesian Head of House of Representative, Setya Novanto [15]. 
 
