@@ -97,6 +97,7 @@ No|	Weighted PageRank	||	Betweenness Centrality
 7|	British Anguilla|	1.94	||	New Zealand|	28.13
 8|	Samoa	|1.87		||United Kingdom	|24.00
 9|	Hong Kong	|0.66	||	Belize|	20.79
+
 Table 4- Results of Weighted PageRank and Betweenness Centrality
 From Table 3, we can see that the results differ for both algorithms. In Weighted PageRank, all the top 8 countries are labelled as Tax Havens save for Nevada. Nevada can be considered an outlier for it has unique tax rules within US. As such, we can see that PageRank is very good at identifying all the Tax Havens around the world. 
 
