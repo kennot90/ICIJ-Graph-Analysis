@@ -4,7 +4,8 @@ In this report, we look at the leaked papers published by The International Cons
 
 In the Macro Approach, we identified the Tax Havens as well as Financial Hubs in the ICIJ Database. Armed with this information, we shifted our focus towards the Micro Approach and found the important firms that facilitate the creation of off-shore entity es around the world. We also delved into the affairs of the Duchy of Lancaster, who is the Queen of England, as a case example of how off-shoring of the elite rich is done.
 
-As mentioned by Barack Obama, 
+As mentioned by Barack Obama,
+
 *"It's not that they're breaking the laws," he said, "it's that the laws are so poorly designed that they allow people, if they've got enough lawyers and enough accountants, to wiggle out of responsibilities that ordinary citizens are having to abide by."*
 
 <h1>Introduction </h1>
@@ -15,18 +16,18 @@ Prior to this database, these companies and trusts incorporated in tax havens, a
 
 On 15 April 2016, ICIJ has published a huge database detailing the confidential financial information on the offshore entities as well as the relationship of these entities with the famous and powerful people in the world. While offshore business entities are legal and can be used for legitimate reasons, the purpose of some are more dubious and darker. In this report, we look at the information available to us from an objective point of view and aim to derive insights from this.
 
-#Business Problems 
+<h1>Business Problems</h1>
 
-##Question: Which countries are the Tax Havens (Key Players)? <h2> tag
+<h2>Question: Which countries are the Tax Havens (Key Players)? </h2>
 
 We would like to know which countries serve as the world’s tax havens. These countries could serve as actual “offshore-friendly” countries, or as financial hubs  who have the infrastructure to facilitate these offshore legal complexities and transactions. 
 
-##Question: What are the communities among the key players? <h2> tag
+<h2>Question: What are the communities among the key players? </h2>
 
 After obtaining the tax havens, we would like to delve a bit deeper into who are the Officers that operate around these tax havens. This would be useful insight into which companies / personnel are largely responsible for such offshore activities. 
 
-#Data Exploration <h1> tag
-##Data contained in the Paradise Papers: <h2> tag
+<h1>Data Exploration </h1>
+<h2>Data contained in the Paradise Papers: </h2>
 •	Officer - A person or company who plays a role in an offshore entity, such as beneficiary, director, or shareholder. The relationships shown in the diagram are just a sample of all the existing ones.
 •	Intermediary: go-between for someone seeking an offshore corporation and an offshore service provider — usually a law-firm or a middleman that asks an offshore service provider to create an offshore firm for a client.
 •	Entity - The offshore legal entity. This could be a company, trust, foundation, or other legal entity created in a low-tax jurisdiction.
