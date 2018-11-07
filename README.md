@@ -38,6 +38,7 @@ After obtaining the tax havens, we would like to delve a bit deeper into who are
 
 - Other: Additional information items.
 
+![Overview_Image](https://github.com/rickyken90/ICIJ-Graph-Analysis/blob/master/Images/overview_image.jpg)<br />
 Figure 1 - Relationship between the different nodes
 
 	Bahamas Papers	Offshore Leaks	Panama Papers	Paradise Papers
